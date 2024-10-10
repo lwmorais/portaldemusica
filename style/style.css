@@ -1,0 +1,282 @@
+html, body {
+    scroll-behavior: smooth;
+}
+
+.spotify-highlight {
+    color: green;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+.grid-item a {
+    display: block;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.grid-item:hover {
+    background: #444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+}
+
+#hero {
+    background: url('/imagens/hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background: #005700;
+}
+
+#carrossel {
+    padding: 50px 0;
+    background: #222;
+    text-align: center;
+    position: relative;
+}
+
+.carrossel-item > img {
+    max-height: 250px;
+    max-width: 250px;
+    width: 128px;
+    height: 128px;
+}
+
+#carrossel h2 {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.carrossel-item {
+    min-width: 250px;
+    height: 10%;
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    margin-right: 20px;
+}
+
+.carrossel-container{
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.carrossel-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.prev {
+    left: 300px;
+    background-color:#444;
+}
+
+.next {
+    right: 300px;
+    background-color:#444;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#artistas-destaque {
+    padding: 50px 0;
+    background: #222;
+    text-align: center;
+}
+
+#artistas-destaque h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: white;
+}
+
+.grid-artistas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.artista-item {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artista-item img {
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.artista-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.artista-item p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.artista-item:hover {
+    transform: scale(1.05);
+}
+
+#explorar {
+    padding: 50px 0;
+    background: #222;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background: #333;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+#videos {
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+.video {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: opacity 0.5s;
+    display: none;
+}
+
+.video.active {
+    display: block;
+    opacity: 1;
+}
+
+.video-item {
+    margin: 20px;
+    text-align: center;
+}
+
+.video-item h3 {
+    margin-top: 10px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.oi {
+    align-items: center;
+    transform: scale(0.7);
+}
+
+#cta-final {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#cta-final h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.scroll-indicator {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: white;
+}
